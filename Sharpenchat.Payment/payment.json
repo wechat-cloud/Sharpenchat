@@ -1,0 +1,109 @@
+﻿{
+  "apis": {
+    "unifiedorder": "https://api.mch.weixin.qq.com/pay/unifiedorder",
+    "orderquery": "https://api.mch.weixin.qq.com/pay/orderquery",
+    "closeorder": "https://api.mch.weixin.qq.com/pay/closeorder",
+    "refund": "https://api.mch.weixin.qq.com/secapi/pay/refund",
+    "refundquery": "https://api.mch.weixin.qq.com/pay/refundquery",
+    "downloadbill": "https://api.mch.weixin.qq.com/pay/downloadbill",
+    "report": "https://api.mch.weixin.qq.com/payitil/report",
+
+    "shorturl": "https://api.mch.weixin.qq.com/tools/shorturl",
+
+    "micropay": "https://api.mch.weixin.qq.com/pay/micropay",
+    "reverse": "https://api.mch.weixin.qq.com/secapi/pay/reverse",
+    "authcodetoopenid": "https://api.mch.weixin.qq.com/tools/authcodetoopenid"
+  },
+  "errors": [
+    {
+      "code": "NOAUTH",
+      "desc": "商户无此接口权限",
+      "reason": "商户未开通此接口权限",
+      "solution": "请商户前往申请此接口权限"
+    },
+    {
+      "code": "NOTENOUGH",
+      "desc": "余额不足",
+      "reason": "用户帐号余额不足",
+      "solution": "用户帐号余额不足，请用户充值或更换支付卡后再支付"
+    },
+    {
+      "code": "ORDERPAID",
+      "desc": "商户订单已支付",
+      "reason": "商户订单已支付，无需重复操作",
+      "solution": "商户订单已支付，无需更多操作"
+    },
+    {
+      "code": "ORDERCLOSED",
+      "desc": "订单已关闭",
+      "reason": "当前订单已关闭，无法支付",
+      "solution": "当前订单已关闭，请重新下单"
+    },
+    {
+      "code": "SYSTEMERROR",
+      "desc": "系统错误",
+      "reason": "系统超时",
+      "solution": "系统异常，请用相同参数重新调用"
+    },
+    {
+      "code": "APPID_NOT_EXIST",
+      "desc": "APPID不存在",
+      "reason": "参数中缺少APPID",
+      "solution": "请检查APPID是否正确"
+    },
+    {
+      "code": "MCHID_NOT_EXIST",
+      "desc": "MCHID不存在",
+      "reason": "参数中缺少MCHID",
+      "solution": "请检查MCHID是否正确"
+    },
+    {
+      "code": "APPID_MCHID_NOT_MATCH",
+      "desc": "appid和mch_id不匹配",
+      "reason": "appid和mch_id不匹配",
+      "solution": "请确认appid和mch_id是否匹配"
+    },
+    {
+      "code": "LACK_PARAMS",
+      "desc": "缺少参数",
+      "reason": "缺少必要的请求参数",
+      "solution": "请检查参数是否齐全"
+    },
+    {
+      "code": "OUT_TRADE_NO_USED",
+      "desc": "商户订单号重复",
+      "reason": "同一笔交易不能多次提交",
+      "solution": "请核实商户订单号是否重复提交"
+    },
+    {
+      "code": "SIGNERROR",
+      "desc": "签名错误",
+      "reason": "参数签名结果不正确",
+      "solution": "请检查签名参数和方法是否都符合签名算法要求"
+    },
+    {
+      "code": "XML_FORMAT_ERROR",
+      "desc": "XML格式错误",
+      "reason": "XML格式错误",
+      "solution": "请检查XML参数格式是否正确"
+    },
+    {
+      "code": "REQUIRE_POST_METHOD",
+      "desc": "请使用post方法",
+      "reason": "未使用post传递参数",
+      "solution": "请检查请求参数是否通过post方法提交"
+    },
+    {
+      "code": "POST_DATA_EMPTY",
+      "desc": "post数据为空",
+      "reason": "post数据不能为空",
+      "solution": "请检查post数据是否为空"
+    },
+    {
+      "code": "NOT_UTF8",
+      "desc": "编码格式错误",
+      "reason": "未使用指定编码格式",
+      "solution": "请使用UTF8编码格式"
+    }
+  ]
+}

@@ -11,4 +11,13 @@ namespace Sharpenchat.Core.Serialization
         Task SerializeAsync<T>(T target, TextWriter writer);
         Task<T> DeserializeAsync<T>(TextReader reader);
     }
+
+    public class FieldName : Attribute
+    {
+        private readonly string _name;
+
+        public FieldName(string name) {
+            _name = name;
+        }
+    }
 }

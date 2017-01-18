@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sharpenchat.Core.Container
 {
-    public interface IRegistry
+    public interface IServiceRegistry
     {
         TInterface Resolve<TInterface>();
     }
