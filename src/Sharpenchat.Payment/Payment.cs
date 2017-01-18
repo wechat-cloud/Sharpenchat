@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Sharpenchat.Core;
 using Sharpenchat.Core.Remoting;
 using Sharpenchat.Core.Serialization;
 
@@ -9,14 +11,17 @@ namespace Sharpenchat.Payment
         private readonly IHttpClient _httpClient;
         private readonly IJsonSerializer _jsonSerializer;
         private readonly IXmlSerializer _xmlSerializer;
+        private readonly ISignatureService _signatureService;
 
         protected Payment(
             IHttpClient httpClient, 
             IJsonSerializer jsonSerializer, 
-            IXmlSerializer xmlSerializer) {
+            IXmlSerializer xmlSerializer,
+            ISignatureService signatureService) {
             _httpClient = httpClient;
             _jsonSerializer = jsonSerializer;
             _xmlSerializer = xmlSerializer;
+            _signatureService = signatureService;
         }
 
         public void OrderQuery() {
@@ -43,10 +48,22 @@ namespace Sharpenchat.Payment
             throw new NotImplementedException();
         }
 
-        protected TRes ExecuteUnifiedOrderRequest<TReq, TRes>(TReq request)
-            where TReq : UnifiedOrderRequest
-            where TRes : UnifiedOrderResponse {
-            throw new NotImplementedException();
+        protected async Task<UnifiedOrderResponse> ExecuteUnifiedOrderRequest<TReq>(TReq request)
+            where TReq : UnifiedOrderRequest {
+
+            _signatureService
+                .GenNonce(nonce => {
+                    request.nonce_str = nonce;
+                })
+                .GenSign(request, sign => {
+                    request.sign = sign;
+                });
+
+            var response = await _httpClient.PostAsync<UnifiedOrderResponse>("api_url", async writer => {
+                await _xmlSerializer.SerializeAsync(request, writer);
+            });
+
+            return response;
         }
     }
 }

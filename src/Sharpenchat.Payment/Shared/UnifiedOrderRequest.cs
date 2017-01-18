@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Sharpenchat.Core;
 using Sharpenchat.Core.Serialization;
 
 namespace Sharpenchat.Payment
