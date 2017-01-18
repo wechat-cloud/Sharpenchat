@@ -8,5 +8,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NETStandard.Library" Version="1.6.1" />
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpenchat.Core\Sharpenchat.Core.csproj" />
   </ItemGroup>
 </Project>

@@ -13,6 +13,7 @@ namespace Sharpenchat.Plugins.JsonNet
         {
             _serializer = new JsonSerializer();
         }
+
         public async Task<T> DeserializeAsync<T>(TextReader reader) {
             var jsonTextReader = new JsonTextReader(reader);
             var result = _serializer.Deserialize<T>(jsonTextReader);
