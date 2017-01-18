@@ -16,8 +16,10 @@ namespace Sharpenchat.Core.Serialization
                         .ConfigureAwait(false)
                         .GetAwaiter()
                         .GetResult();
+
                     writer.Flush();
                     stream.Seek(0, SeekOrigin.Begin);
+
                     using (var reader = new StreamReader(stream)) {
                         return reader.ReadToEnd();
                     }

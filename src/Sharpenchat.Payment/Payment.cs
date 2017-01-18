@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Reflection;
 using System.Threading.Tasks;
 using Sharpenchat.Core;
 using Sharpenchat.Core.Remoting;
 using Sharpenchat.Core.Serialization;
+using Sharpenchat.Payment.Config;
 
 namespace Sharpenchat.Payment
 {
@@ -12,6 +14,13 @@ namespace Sharpenchat.Payment
         private readonly IJsonSerializer _jsonSerializer;
         private readonly IXmlSerializer _xmlSerializer;
         private readonly ISignatureService _signatureService;
+        private static PaymentConfig _config;
+
+        static Payment() {
+            var type = typeof(Payment).GetTypeInfo();
+            var resource = type.Namespace + "." + "payment.json";
+            _config = Wechat.LoadConfiguration<PaymentConfig>(type.Assembly, resource);
+        }
 
         protected Payment(
             IHttpClient httpClient, 

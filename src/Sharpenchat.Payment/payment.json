@@ -1,18 +1,18 @@
 ﻿{
-  "apis": {
-    "unifiedorder": "https://api.mch.weixin.qq.com/pay/unifiedorder",
-    "orderquery": "https://api.mch.weixin.qq.com/pay/orderquery",
-    "closeorder": "https://api.mch.weixin.qq.com/pay/closeorder",
+  "api": {
+    "unifiedOrder": "https://api.mch.weixin.qq.com/pay/unifiedorder",
+    "orderQuery": "https://api.mch.weixin.qq.com/pay/orderquery",
+    "closeOrder": "https://api.mch.weixin.qq.com/pay/closeorder",
     "refund": "https://api.mch.weixin.qq.com/secapi/pay/refund",
-    "refundquery": "https://api.mch.weixin.qq.com/pay/refundquery",
-    "downloadbill": "https://api.mch.weixin.qq.com/pay/downloadbill",
+    "refundQuery": "https://api.mch.weixin.qq.com/pay/refundquery",
+    "downloadBill": "https://api.mch.weixin.qq.com/pay/downloadbill",
     "report": "https://api.mch.weixin.qq.com/payitil/report",
 
-    "shorturl": "https://api.mch.weixin.qq.com/tools/shorturl",
+    "shortUrl": "https://api.mch.weixin.qq.com/tools/shorturl",
 
-    "micropay": "https://api.mch.weixin.qq.com/pay/micropay",
+    "microPay": "https://api.mch.weixin.qq.com/pay/micropay",
     "reverse": "https://api.mch.weixin.qq.com/secapi/pay/reverse",
-    "authcodetoopenid": "https://api.mch.weixin.qq.com/tools/authcodetoopenid"
+    "authCodeToOpenId": "https://api.mch.weixin.qq.com/tools/authcodetoopenid"
   },
   "errors": [
     {
