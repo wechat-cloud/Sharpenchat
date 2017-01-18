@@ -11,9 +11,9 @@
     <PackageReference Include="Microsoft.NETCore.App" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sharpenchat.Plugins.Autofac\Sharpenchat.Plugins.Autofac.csproj" />
-    <ProjectReference Include="..\src\Sharpenchat.Core\Sharpenchat.Core.csproj" />
-    <ProjectReference Include="..\src\Sharpenchat.Plugins.JsonNet\Sharpenchat.Plugins.JsonNet.csproj" />
-    <ProjectReference Include="..\src\Sharpenchat\Sharpenchat.csproj" />
+    <ProjectReference Include="..\..\src\Sharpenchat.Plugins.Autofac\Sharpenchat.Plugins.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Sharpenchat.Core\Sharpenchat.Core.csproj" />
+    <ProjectReference Include="..\..\src\Sharpenchat.Plugins.JsonNet\Sharpenchat.Plugins.JsonNet.csproj" />
+    <ProjectReference Include="..\..\src\Sharpenchat\Sharpenchat.csproj" />
   </ItemGroup>
 </Project>

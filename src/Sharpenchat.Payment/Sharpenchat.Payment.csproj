@@ -7,10 +7,14 @@
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.3.0" />
-    <PackageReference Include="NETStandard.Library" Version="1.6.1" />
+    <EmbeddedResource Include="payment.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Sharpenchat.Core\Sharpenchat.Core.csproj" />
+    <PackageReference Include="NETStandard.Library" Version="1.6.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpenchat.Core\Sharpenchat.Core.csproj" />
+    <ProjectReference Include="..\Sharpenchat\Sharpenchat.csproj" />
   </ItemGroup>
 </Project>

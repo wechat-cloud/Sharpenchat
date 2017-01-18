@@ -15,7 +15,7 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0-beta4-build1194" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Sharpenchat.Core\Sharpenchat.Core.csproj" />
-    <ProjectReference Include="..\src\Sharpenchat\Sharpenchat.csproj" />
+    <ProjectReference Include="..\..\src\Sharpenchat.Core\Sharpenchat.Core.csproj" />
+    <ProjectReference Include="..\..\src\Sharpenchat\Sharpenchat.csproj" />
   </ItemGroup>
 </Project>

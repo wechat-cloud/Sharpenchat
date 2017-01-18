@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Xml.Serialization;
 using Sharpenchat.Core.Serialization;
 
 namespace Sharpenchat.Payment
 {
-    public class UnifiedOrderRequest
+    public class UnifiedOrderRequest : RequestBase
     {
         [FieldName("appid")]
         [Required]

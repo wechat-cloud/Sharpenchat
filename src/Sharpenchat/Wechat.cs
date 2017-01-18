@@ -6,5 +6,9 @@ namespace Sharpenchat
 {
     public class Wechat
     {
+
+        internal static T GetService<T>() {
+            throw new NotImplementedException();
+        }
     }
 }

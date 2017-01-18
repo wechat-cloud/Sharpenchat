@@ -11,15 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Plugins.JsonNet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat", "src\Sharpenchat\Sharpenchat.csproj", "{FBD981AE-0259-43A7-9BA4-72B3E3F9CD95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Tests", "Sharpenchat.Tests\Sharpenchat.Tests.csproj", "{89C69C3E-E4C5-477E-B8E3-7D374A56A41E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Tests", "tests\Sharpenchat.Tests\Sharpenchat.Tests.csproj", "{89C69C3E-E4C5-477E-B8E3-7D374A56A41E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Plugins.Autofac", "Sharpenchat.Plugins.Autofac\Sharpenchat.Plugins.Autofac.csproj", "{73F76CBF-5980-4DE2-92D3-51675C13D24D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Plugins.Autofac", "src\Sharpenchat.Plugins.Autofac\Sharpenchat.Plugins.Autofac.csproj", "{73F76CBF-5980-4DE2-92D3-51675C13D24D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{BDB40D15-A8B7-48AD-BBF7-DBCAEDF61AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Console", "Sample.Console\Sample.Console.csproj", "{40A7FD18-CB87-45EF-878B-BA1C550A9E4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Console", "samples\Sample.Console\Sample.Console.csproj", "{40A7FD18-CB87-45EF-878B-BA1C550A9E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Payment", "Sharpenchat.Payment\Sharpenchat.Payment.csproj", "{2DBF2E32-B13E-46BF-8BD3-9F38673B9B8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Payment", "src\Sharpenchat.Payment\Sharpenchat.Payment.csproj", "{2DBF2E32-B13E-46BF-8BD3-9F38673B9B8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

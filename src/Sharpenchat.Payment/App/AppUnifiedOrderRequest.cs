@@ -15,13 +15,10 @@ namespace Sharpenchat.Payment
                 if (value == null) {
                     detail = null;
                 }
+                
+                _validationProvider.Validate(value);
 
-                var jsonSerializer = Payment.GetService<IJsonSerializer>();
-                var validationProvider = Payment.GetService<IValidationProvider>();
-
-                validationProvider.Validate(value);
-
-                detail = jsonSerializer.Serialize(value);
+                detail = _jsonSerializer.Serialize(value);
             }
         }
     }

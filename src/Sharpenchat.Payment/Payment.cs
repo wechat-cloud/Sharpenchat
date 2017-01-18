@@ -48,9 +48,5 @@ namespace Sharpenchat.Payment
             where TRes : UnifiedOrderResponse {
             throw new NotImplementedException();
         }
-
-        public static T GetService<T>() {
-            throw new NotImplementedException();
-        }
     }
 }
