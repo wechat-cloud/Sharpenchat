@@ -18,7 +18,7 @@ namespace Sharpenchat.Payment
                 
                 _validationProvider.Validate(value);
 
-                detail = _jsonSerializer.Serialize(value);
+                detail = _jsonSerializer.SerializeSync(value);
             }
         }
     }

@@ -7,6 +7,11 @@
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Assembly.cs">
+      <Link>Assembly.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="payment.json" />
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26020.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpenchat.Core", "src\Sharpenchat.Core\Sharpenchat.Core.csproj", "{72BEB45B-A032-47F4-B9B7-950C2A2F7940}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{973E23A8-567F-40E7-B5A6-C6E7C4B76F22}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{973E23A8-567F-40E7-B5A6-C6E7C4B76F22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Plugins.JsonNet", "src\Sharpenchat.Plugins.JsonNet\Sharpenchat.Plugins.JsonNet.csproj", "{F5335143-1818-41B7-BEAF-8C772C6B4142}"
 EndProject
@@ -15,13 +15,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Tests", "tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Plugins.Autofac", "src\Sharpenchat.Plugins.Autofac\Sharpenchat.Plugins.Autofac.csproj", "{73F76CBF-5980-4DE2-92D3-51675C13D24D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{BDB40D15-A8B7-48AD-BBF7-DBCAEDF61AB1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{BDB40D15-A8B7-48AD-BBF7-DBCAEDF61AB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Console", "samples\Sample.Console\Sample.Console.csproj", "{40A7FD18-CB87-45EF-878B-BA1C550A9E4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Payment", "src\Sharpenchat.Payment\Sharpenchat.Payment.csproj", "{2DBF2E32-B13E-46BF-8BD3-9F38673B9B8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpenchat.Payment.Tests", "tests\Sharpenchat.Payment.Tests\Sharpenchat.Payment.Tests.csproj", "{FF512891-81DB-45F7-AAD7-E469E08223A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{D254778C-7CB3-4F6F-8B51-957EDF6746F7}"
+	ProjectSection(SolutionItems) = preProject
+		src\Assembly.cs = src\Assembly.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{258A4B90-FD66-4C5F-90E1-557158261D94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,7 +142,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5335143-1818-41B7-BEAF-8C772C6B4142} = {973E23A8-567F-40E7-B5A6-C6E7C4B76F22}
+		{89C69C3E-E4C5-477E-B8E3-7D374A56A41E} = {258A4B90-FD66-4C5F-90E1-557158261D94}
 		{73F76CBF-5980-4DE2-92D3-51675C13D24D} = {973E23A8-567F-40E7-B5A6-C6E7C4B76F22}
 		{40A7FD18-CB87-45EF-878B-BA1C550A9E4E} = {BDB40D15-A8B7-48AD-BBF7-DBCAEDF61AB1}
+		{FF512891-81DB-45F7-AAD7-E469E08223A4} = {258A4B90-FD66-4C5F-90E1-557158261D94}
 	EndGlobalSection
 EndGlobal
