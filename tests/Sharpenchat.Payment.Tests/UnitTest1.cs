@@ -7,7 +7,6 @@ namespace Sharpenchat.Payment.Tests
     {
         [Fact]
         public void Test1() {
-            var k = new AppPayment(null, null, null, null);
         }
     }
 }

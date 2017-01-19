@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Sharpenchat.Payment
 {
@@ -8,6 +9,7 @@ namespace Sharpenchat.Payment
     // MICROPAY--刷卡支付
     public interface IPayment
     {
+        Task<UnifiedOrderResponse> UnifiedOrder(UnifiedOrderRequest order);
         void OrderQuery();
         void CloseOrder();
         void Refund();

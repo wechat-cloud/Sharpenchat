@@ -12,12 +12,16 @@ namespace Sharpenchat.Core.Serialization
         Task<T> DeserializeAsync<T>(TextReader reader);
     }
 
-    public class FieldName : Attribute
+    public class FieldNameAttribute : Attribute
     {
         private readonly string _name;
 
-        public FieldName(string name) {
+        public FieldNameAttribute(string name) {
             _name = name;
         }
+
+        public string Name => _name;
     }
+
+    public class IgnoreAttribute : Attribute {}
 }
