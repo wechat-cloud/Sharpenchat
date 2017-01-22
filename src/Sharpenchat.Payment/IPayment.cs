@@ -9,7 +9,7 @@ namespace Sharpenchat.Payment
     // MICROPAY--刷卡支付
     public interface IPayment
     {
-        Task<UnifiedOrderResponse> UnifiedOrder(UnifiedOrderRequest order);
+        Task<UnifiedOrderResponse> UnifiedOrderAsync(UnifiedOrderRequest order);
         void OrderQuery();
         void CloseOrder();
         void Refund();

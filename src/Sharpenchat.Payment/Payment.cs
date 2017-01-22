@@ -54,7 +54,7 @@ namespace Sharpenchat.Payment
             throw new NotImplementedException();
         }
         
-        public async Task<UnifiedOrderResponse> UnifiedOrder(UnifiedOrderRequest order) {
+        public async Task<UnifiedOrderResponse> UnifiedOrderAsync(UnifiedOrderRequest order) {
             if (order == null) {
                 throw new ArgumentException("order cannot be null", nameof(order));
             }
