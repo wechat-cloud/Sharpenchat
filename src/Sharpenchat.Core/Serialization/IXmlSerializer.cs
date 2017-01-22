@@ -24,4 +24,6 @@ namespace Sharpenchat.Core.Serialization
     }
 
     public class IgnoreAttribute : Attribute {}
+
+    public class ProtectAttribute : Attribute {}
 }
