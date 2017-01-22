@@ -1,6 +1,6 @@
 ﻿namespace Sharpenchat.Core.Container
 {
-    public interface IServiceContainer
+    public interface IServiceResolver
     {
         IServiceRegistry RequestRegistry();
     }

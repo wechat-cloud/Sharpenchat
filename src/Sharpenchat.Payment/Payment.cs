@@ -106,5 +106,13 @@ namespace Sharpenchat.Payment
 
             return response;
         }
+
+        public void Shorturl() {
+            throw new NotImplementedException();
+        }
+
+        public void AuthCodeToOpenId() {
+            throw new NotImplementedException();
+        }
     }
 }

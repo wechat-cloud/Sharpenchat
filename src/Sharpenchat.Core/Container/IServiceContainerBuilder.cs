@@ -4,6 +4,6 @@
     {
         IServiceContainerBuilder Register<TInterface, TImplementation>() where TImplementation : TInterface, new();
         IServiceContainerBuilder Replace<TInterface, TImplementation>() where TImplementation : TInterface, new();
-        IServiceContainer BuildContainer();
+        IServiceResolver BuildContainer();
     }
 }

@@ -3,12 +3,22 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using Sharpenchat.Core;
 using Sharpenchat.Core.Serialization;
 
 namespace Sharpenchat
 {
     public class Wechat
     {
+        static Wechat() {
+            // init ioc
+            // register default service
+        }
+
+        public static T Api<T>() where T : IWechatApi {
+            throw new NotImplementedException();
+        }
+
         internal static T GetService<T>() {
             if (typeof(T) == typeof(IJsonSerializer)) {
                 object s = new DefaultJsonSerializer();

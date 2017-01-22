@@ -12,7 +12,7 @@ namespace Sharpenchat
             throw new NotImplementedException();
         }
 
-        public IServiceContainer BuildContainer() {
+        public IServiceResolver BuildContainer() {
             throw new NotImplementedException();
         }
     }

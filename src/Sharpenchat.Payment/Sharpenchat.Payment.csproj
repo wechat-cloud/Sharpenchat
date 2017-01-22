@@ -22,7 +22,4 @@
     <ProjectReference Include="..\Sharpenchat.Core\Sharpenchat.Core.csproj" />
     <ProjectReference Include="..\Sharpenchat\Sharpenchat.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App\" />
-  </ItemGroup>
 </Project>

@@ -3,11 +3,11 @@ using Sharpenchat.Core.Container;
 
 namespace Sharpenchat.Plugins.Autofac
 {
-    internal class AutofacServiceContainer : IServiceContainer
+    internal class AutofacServiceResolver : IServiceResolver
     {
         private readonly IContainer _innerContainer;
 
-        public AutofacServiceContainer(IContainer innerContainer) {
+        public AutofacServiceResolver(IContainer innerContainer) {
             _innerContainer = innerContainer;
         }
 

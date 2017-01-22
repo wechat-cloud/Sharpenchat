@@ -20,9 +20,9 @@ namespace Sharpenchat.Plugins.Autofac
             return Register<TInterface, TImplementation>();
         }
 
-        public IServiceContainer BuildContainer() {
+        public IServiceResolver BuildContainer() {
             var inner = _builder.Build();
-            return new AutofacServiceContainer(inner);
+            return new AutofacServiceResolver(inner);
         }
     }
 }

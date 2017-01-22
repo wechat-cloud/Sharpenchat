@@ -5,20 +5,13 @@ using Sharpenchat.Core.Container;
 
 namespace Sharpenchat
 {
-    public class WechatBuilder
+    public class WechatConfiguration
     {
-        private readonly IServiceContainerBuilder _containerBuilder;
+        public IServiceRegistry Registry { get; }
+        public IServiceResolver Resolver { get; set; }
+        public void Configure() { }
+        public void ExportAllServices(Action action) { }
 
-        public WechatBuilder() {
-            _containerBuilder = new DefaultContainerBuilder();
-        }
-
-        public WechatBuilder(IServiceContainerBuilder containerBuilder) {
-            _containerBuilder = containerBuilder;
-        }
-
-        public WechatBuilder Configure(Action<object> action) {
-            throw new NotImplementedException();
-        }
+        public void SetupResolver() { }
     }
 }
